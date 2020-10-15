@@ -21,8 +21,8 @@ public class UserService {
         return repository.findById(id);
     }
 
-    public Optional<User> findByEmailAndPassword(String email, String password) {
-        return repository.findByEmailAndPassword(email, password);
+    public Optional<User> findByEmailAndPassword(String name, String password) {
+        return repository.findByEmailAndPassword(name, password);
     }
 
     public User save(User salesman){
